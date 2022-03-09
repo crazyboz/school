@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(background_login.jpeg);
+  background-size: cover;
+}
+.box {
+  background: linear-gradient(orange, yellow);
+  width: 300px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(224, 226, 97, 0.8);
+}
+.box:hover {
+  cursor: pointer;
+  transform: rotateX(45);
+  transform: translate(-50%, -55%);
+  transition: all 0.3s;
+}
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid #0367fd;
+  padding: 14px 10px;
+  width: 220px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25px;
+}
+.radd {
+  border: 3px solid #0367fd;
+  border-radius: 24px;
+  padding: 14px 10px;
+  width: 220px;
+  text-align: center;
+  margin: 20px auto;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 270px;
+  border-color: yellow;
+}
+.box input[type="submit"],
+.btnclick {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 3px solid #0367fd;
+  padding: 14px 10px;
+  width: 220px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.box input[type="submit"]:hover,
+a:hover {
+  background-color: #ffc400;
+}
+.forgot {
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 10px;
+}
+.account {
+  text-align: right;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin-left: 10px;
+}

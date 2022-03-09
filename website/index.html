@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School management</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    
+    <link rel=""stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-secondary">
+            <i class="fa-solid fa-school"></i>
+            School Management
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="./php/lotus.php" class="nav-link">view details</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Comparator</a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link">Contact us</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a href="Login.html" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item d-md-inline ms-2 d-none">
+              <a href="Login.html" class="btn btn-secondary">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="paraa">
+    <p class="para">
+      <marquee
+        >This website is used to manage school assets details of the building
+        such as type,size,area,year of construction,capacity,rooms,labs,
+        maintainance required,etc.,should be available along with GIS mapping of
+        location ,present use of building,etc.</marquee
+      >
+    </div>
+    </p>
+    <div class="home">
+      <div class="swiper mySwiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img class="imgg" src="school1.jpg" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="school.jpg" class="imgg" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="img.jpg" class="imgg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <div class="about" id="about">
+      <h2 class="headingsec">About us:</h2>
+      <p>This website is used to manage school assets details of the building
+        such as type,size,area,year of construction,capacity,rooms,labs,
+        maintainance required,etc.,should be available along with GIS mapping of
+        location ,present use of building,etc.</p>
+    </div>
+    <div><h1>List of schools</h1></div>
+    <div class="gallery">
+      <a href="./php/lotus.php">
+        <div class="container img1">
+          <p id="cover">Goverment Boys Hr SEC School</p>
+        </div>
+      </a>
+      <a href="./php/lotus.php">
+        <div class="container img2">
+          <p id="cover">Goverment girls Matric Hr SEC School</p>
+        </div></a
+      >
+      <a href="./php/lotus.php">
+        <div class="container img3">
+          <p id="cover"> Carmel Matric Hr SEC School</p>
+        </div></a
+      >
+      <a href="./php/lotus.php">
+        <div class="container img4">
+          <p id="cover">Lotus Matric Hr SEC School</p>
+        </div>
+      </a>
+      <a href="lotus.php">
+        <div class="container img5">
+          <p id="cover">Oxford Matric Hr SEC School</p>
+        </div>
+      </a>
+    </div>
+    <section class="footer" id="footer">
+      <div class="icon-container">
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>phone</h3>
+          <p>+123-456-7890</p>
+          <p>+111-222-3333</p>
+        </div>
+        <div class="icons email">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <p>hacho_crew20@gmail.com</p>
+          <p>hacko2020@gmail.com</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>address</h3>
+          <p>salem ,tamilnadu-637502</p>
+        </div>
+      </div>
+      <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+      <div class="credit">
+        created by <span>Hacko_Crew </span> | all rights reserved! &copy;
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/0772526fab.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    </script>
+  </body>
+</html>

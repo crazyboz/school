@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Calibri, Helvetica, sans-serif;
+        background-color: pink;
+      }
+
+      body {
+        text-transform: capitalize;
+      }
+
+      :root {
+        --peru: #cd9452;
+        --black: #222;
+        --white: #fff;
+        --light-black: #666;
+        --light-white: #ccc;
+        --dark-bd: rgba(0, 0, 0, 0.7);
+        --border: 1rem solid #aaa;
+        --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      }
+
+      .footer {
+        padding: 32px;
+        margin-top: 32px;
+        text-align: center;
+        background-color: aliceblue;
+      }
+
+      .footer .icons-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+      }
+
+      .footer .icons-container .icons {
+        text-align: center;
+        padding: 3rem 2rem;
+      }
+
+      .footer .icons-container .icons {
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        background: var(--peru);
+        margin-bottom: 0.5rem;
+        line-height: 5.8rem;
+        font-size: 2rem;
+      }
+
+      .footer .icons-container .icons h3 {
+        font-size: 2rem;
+        color: var(--black);
+        padding: 1rem 0;
+      }
+
+      .footer .icons-container .icons p {
+        line-height: 1.5;
+        font-size: 1.7rem;
+        color: var(--light-black);
+        text-transform: none;
+      }
+
+      .footer .share {
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .fab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer .share a {
+        text-decoration: none;
+        height: 5rem;
+        width: 5rem;
+        line-height: 5.8rem;
+        color: var(--white);
+        background: var(--black);
+        margin: 0 0.3rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      .footer .share a:hover {
+        background: var(--peru);
+      }
+
+      .footer .credit {
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: var(--border);
+        font-size: 1rem;
+        color: var(--light-black);
+      }
+
+      .email p {
+        text-transform: none;
+        /* background: var(--black); */
+      }
+
+      .footer .credit span {
+        color: var(--peru);
+      }
+
+      .fab {
+        height: 3rem;
+      }
+
+      .container {
+        padding: 50px;
+        background-color: lightblue;
+        /* background: url(img.jpg);
+  background-size: cover; */
+      }
+
+      nav {
+        background-color: antiquewhite;
+        position: fixed;
+        margin-bottom: 32px;
+      }
+
+      input[type="text"],
+      input[type="number"],
+      input[type="date"],
+      input[type="password"],
+      textarea,
+      .state {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f13d;
+      }
+
+      input[type="text"]:focus,
+      input[type="number"]:focus,
+      input[type="date"]:focus,
+      input[type="password"]:focus {
+        background-color: #ffff80;
+        outline: none;
+      }
+
+      div {
+        padding: 10px 0;
+      }
+
+      hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+      }
+
+      .registerbtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      .registerbtn:hover {
+        opacity: 1;
+      }
+
+      .btn {
+        text-decoration: none;
+        width: 100%;
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet "
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css "
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-secondary">
+            <i class="fa-solid fa-school"></i>
+            School Management
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="form.html" class="nav-link">Enterdetails </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Comparator </a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link">Contact us</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a href="Login.html" class="nav-link">Logout</a>
+            </li>
+            <li class="nav-item d-md-inline ms-2 d-none">
+              <a href="Login.html" class="btn btn-secondary">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <form action="./php/insert.php" method="POST">
+      <div class="container">
+        <h1>Enter Details</h1>
+        <br />
+        <div>
+          <label> <b> School Name:</b></label>
+          <input
+            type="text"
+            name="Schoolname"
+            placeholder="Name"
+            size="15"
+            required
+          />
+        </div>
+        <br />
+        <label> <b>School Id:</b> </label>
+        <br />
+        <input
+          type="text"
+          name="Schoolid"
+          placeholder="School id "
+          size="15"
+          required
+        />
+        <br />
+        <label><b>Year of Construction :</b></label>
+        <br />
+        <input type="date" name="Year" placeholder="year" />
+        <br />
+        <label><b>Area :</b></label>
+        <br />
+        <input type="number" name="Area" placeholder="in acre" size="15" />
+        <br />
+        <label><b>No of rooms :</b></label>
+        <br />
+        <input type="number" name="rooms" placeholder="No.of.rooms" size="15" />
+        <br />
+        <label><b>Room size :</b></label>
+        <br />
+        <input type="number" placeholder="in meter" name="Labs" size="15" />
+        <br />
+        <label><b>No of labs :</b></label>
+        <br />
+        <input type="number" placeholder="No.of.labs" size="15" />
+        <br />
+        <label><b>Capacity :</b></label>
+        <br />
+        <input
+          type="number"
+          name="Capacity"
+          placeholder="No.of.students"
+          size="15"
+        />
+        <br />
+        <label for="email "><b>Email</b></label>
+        <br />
+        <input type="text" placeholder="Enter Email" name="Email" required />
+        <br />
+        <label> <b> Whatsapp no:</b> </label>
+        <br />
+        <input
+          type="text"
+          name="Phone"
+          placeholder="Phone no."
+          size="10"
+          required
+        />
+        <br />
+        <div>
+          <label> <b> Select State : </b></label>
+
+          <select class="state" name="state">
+            <option value=" ">Select State</option>
+            <option value="Andra Pradesh ">Andra Pradesh</option>
+            <option value="Arunachal Pradesh ">Arunachal Pradesh</option>
+            <option value="Assam ">Assam</option>
+            <option value="Bihar ">Bihar</option>
+            <option value="Chhattisgarh ">Chhattisgarh</option>
+            <option value="Goa ">Goa</option>
+            <option value="Gujarat ">Gujarat</option>
+            <option value="Haryana ">Haryana</option>
+            <option value="Himachal Pradesh ">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir ">Jammu and Kashmir</option>
+            <option value="Jharkhand ">Jharkhand</option>
+            <option value="Karnataka ">Karnataka</option>
+            <option value="Kerala ">Kerala</option>
+            <option value="Madya Pradesh ">Madya Pradesh</option>
+            <option value="Maharashtra ">Maharashtra</option>
+            <option value="Manipur ">Manipur</option>
+            <option value="Meghalaya ">Meghalaya</option>
+            <option value="Mizoram ">Mizoram</option>
+            <option value="Nagaland ">Nagaland</option>
+            <option value="Orissa ">Orissa</option>
+            <option value="Punjab ">Punjab</option>
+            <option value="Rajasthan ">Rajasthan</option>
+            <option value="Sikkim ">Sikkim</option>
+            <option value="Tamil Nadu ">Tamil Nadu</option>
+            <option value="Telangana ">Telangana</option>
+            <option value="Tripura ">Tripura</option>
+            <option value="Uttaranchal ">Uttaranchal</option>
+            <option value="Uttar Pradesh ">Uttar Pradesh</option>
+            <option value="West Bengal ">West Bengal</option>
+          </select>
+        </div>
+        <label> <b>Location :</b> </label>
+        <div class="state">
+          <input type="radio" value="Urban" name="location" checked /> Urban
+          <input type="radio" value="Rural" name="location" /> Rural
+        </div>
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter School Email"
+          name="email"
+          required
+        />
+        <label> <b> Contact no:</b> </label>
+        <input
+          type="text"
+          name="whats"
+          placeholder="Phone no."
+          size="10"
+          required
+        />
+        <label><b>Declaration :</b></label>
+        <input
+          type="file"
+          name="fileToUpload"
+          id="fileToUpload"
+          class="state"
+          border:none
+        />
+        <button>submit</button>
+      </div>
+    </form>
+    <section class="footer" id="footer">
+      <div class="icon-container">
+        <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>phone</h3>
+          <p>+123-456-7890</p>
+          <p>+111-222-3333</p>
+        </div>
+        <div class="icons email">
+          <i class="fas fa-envelope"></i>
+          <h3>email</h3>
+          <p>hacho_crew20@gmail.com</p>
+          <p>hacko2020@gmail.com</p>
+        </div>
+        <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>address</h3>
+          <p>salem ,tamilnadu-637502</p>
+        </div>
+      </div>
+      <div class="share">
+        <a href="# " class="fab fa-facebook"></a>
+        <a href="# " class="fab fa-twitter"></a>
+        <a href="# " class="fab fa-instagram"></a>
+        <a href="# " class="fab fa-linkedin"></a>
+      </div>
+      <div class="credit">
+        created by <span>Hacko_Crew </span> | all rights reserved! &copy;
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/0772526fab.js "
+      crossorigin="anonymous "
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js "
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM "
+      crossorigin="anonymous "
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive login form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="./php/login.php" class="box" method="POST">
+      <h1>LOGIN</h1>
+      <input
+        type="text"
+        name="username"
+        placeholder="Enter Username"
+        id="username"
+        required
+      />
+      <input
+        type="Password"
+        name="password"
+        placeholder="Enter Password"
+        id="password"
+        required
+      />
+      <!-- <div class="radd">
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label class="account" for="html">Public</label>
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+
+        <label class="account" for="css">School</label><br />
+      </div> -->
+      <button class="btnclick" type="submit">Login</button>
+      <!-- <a href="form.html" class="btnclick"> Submit </a> -->
+      <a class="forgot" href="#">Forgot Password?</a>
+      <a class="account" href="account.html">Create Account</a>
+    </form>
+    <script src="login.js"></script>
+  </body>
+</html>
